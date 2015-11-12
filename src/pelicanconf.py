@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Carlos Cardoso'
-SITENAME = 'Carlos Cardoso'
+SITENAME = '/dev/me'
 SITEURL = 'http://cadusk.github.io'
 
 
