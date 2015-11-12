@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/me</title><link href="/" rel="alternate"></link><link href="/feeds/hacking.atom.xml" rel="self"></link><id>/</id><updated>2015-11-11T22:36:57-05:00</updated><entry><title>Vagrant</title><link href="/vagrant.html" rel="alternate"></link><updated>2015-11-11T22:36:57-05:00</updated><author><name>Carlos Cardoso</name></author><id>tag:,2015-11-11:vagrant.html</id><summary type="html">&lt;p&gt;Já tinha ouvido falar do &lt;a href="https://www.vagrant.com/"&gt;Vagrant&lt;/a&gt; há um tempo
+atrás e acabei não dando muita bola por ser um wrapper do VirtualBox que
+permite gerenciar ambientes virtuais.&lt;/p&gt;
+&lt;p&gt;Vagrant é muito mais do que isso.&lt;/p&gt;
+&lt;p&gt;É uma ferramenta de colaboração onde pode-se obter imagens de máquinas virtuais
+de diversos sistemas operacionais e diferentes versões com infinitas
+combinações de software pronto pra você rodar... Não gostou? Não tem problema.
+Você pode criar a sua própria biblioteca de templates hospedada num lugarzinho
+bem especial da sua rede particular.&lt;/p&gt;
+&lt;p&gt;Tudo isso alí, há uma linha de comando de você.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Opaaa!&lt;/strong&gt; eu disse linha de comando? Sim, eu disse!! E é isso mesmo, com um
+arquivo de configuração (vagrantfile) é possível recriar um ambiente usado no
+desenvolvimento de um projeto há 3 anos atrás (3 anos representa um baita
+trabalho se pensarmos que você usou o que tinha de mais moderno na época em
+termos de sistema operacional, frameworks, aplicativos, patches, etc.).&lt;/p&gt;
+&lt;p&gt;Se eu tivesse prestado mais atenção daquela vez tinha sofrido menos.&lt;/p&gt;
+&lt;p&gt;Mas enfim, vamos ao que interessa!!!
+Sim, só que no próximo post... :(&lt;/p&gt;
+&lt;p&gt;Configurando um projeto de blog de páginas estáticas desenvolvido em Python
++ Pelican e testado numa máquina gerenciada por Vagrant.&lt;/p&gt;
+&lt;p&gt;Fiquem ligados.&lt;/p&gt;</summary><category term="Virtualization"></category><category term="Vagrant"></category><category term="VirtualBox"></category></entry><entry><title>Command Line Ninja</title><link href="/command-line-ninja.html" rel="alternate"></link><updated>2015-05-25T21:32:00-03:00</updated><author><name>Carlos Cardoso</name></author><id>tag:,2015-05-25:command-line-ninja.html</id><summary type="html">&lt;p&gt;Este artigo ensina o básico da linha de comando, e dá dicas de produtividade
+com ferramentas e teclas de atalho que libertam o poder da linha de comando em
+suas mãos.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lifehacker.com/5743814/become-a-command-line-ninja-with-these-time-saving-shortcuts"&gt;Artigo original&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Atalhos básicos&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;setas para cima/baixo&lt;/strong&gt;: navega pelos últimos comandos registrados no seu
+  histórico. Você ainda pode editar o comando selecionado antes de executá-lo
+  novamente.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Ctrl+esquerda e Ctrl+direita&lt;/strong&gt;: permite navegar para frente e para trás
+  pelos argumentos/parametros da linha de comando, tornando fácil alcançar um
+  parametro que precisa ser modificado.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Ctrl+A e Ctrl+E&lt;/strong&gt;: pula para o início ou final da linha de comando.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Ctrl+U&lt;/strong&gt;: limpa completamente a linha de comando para que se possa começar
+  do zero.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Ctrl+K&lt;/strong&gt;: limpa a linha a partir da posição do cursor até o final.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Ctrl+W&lt;/strong&gt;: apaga palavras para trás da posição do cursor.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Ctrl+R&lt;/strong&gt;: esse atalho abre um prompt que permite pesquisar o histórico de
+  comandos. Por exemplo, para recuperar a linha de comando utilizada para
+  imprimir a data atual do sistema, vc pode tentar a combinação "Ctrl+R date".
+  Daí pra frente basta navegar com as setas para cima e para baixo para ver
+  todas as opções de comandos que contém o texto 'date'.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Tab&lt;/strong&gt;: expande comandos ou argumentos. Por exemplo, vc pode digitas
+  o comando &lt;code&gt;cd ~/Des&lt;/code&gt; e pressionar tab para que o nome do diretório seja
+  expandido para você, com o comando pronto para ser confirmado: &lt;code&gt;cd
+  ~/Desktop&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Usando seu histórico de forma inteligente&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;!!&lt;/code&gt;&lt;/strong&gt;: repete o último comando executado. Diferente de navegar pelas
+  setas, o &lt;code&gt;!!&lt;/code&gt; é substituído na sua linha de comando pelo último comando
+  digitado, assim, imagine o seguinte cenário: vc tenta executar um comando que
+  acaba resultando em problema por falta de permissão &lt;code&gt;apt-get update&lt;/code&gt;. Para
+  executá-lo novamente com privilégios de super usuário basta &lt;code&gt;sudo !!&lt;/code&gt; e BAM!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;!$&lt;/code&gt;&lt;/strong&gt;: reaproveitar os parametros do último comando também é um sacrifício
+  para quem não conhece o &lt;code&gt;!$&lt;/code&gt;. Imagine que você precisa criar uma nova pasta
+  e imediatamente entrar nela. Com &lt;code&gt;mkdir /tmp/uma/nova/pasta&lt;/code&gt; e em seguida vc
+  pode simplesmente usar &lt;code&gt;cd !$&lt;/code&gt; para reutilizar no comando &lt;code&gt;cd&lt;/code&gt; os parametros
+  do comando &lt;code&gt;mkdir&lt;/code&gt; utilizado anteriormente.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Conclusão&lt;/h1&gt;
+&lt;p&gt;Existem muitas outras ferramentas, como expansions, replacements e aliases que
+podem tornar sua vida muito mais fácil com suas tarefas diárias na frente da
+"telinha preta".&lt;/p&gt;
+&lt;p&gt;De uma olhada no artigo original, com o link lá no começo do post, para
+conhecer mais detalhes quando já estiver craque com os básicos.&lt;/p&gt;
+&lt;p&gt;Boa sorte&lt;/p&gt;</summary><category term="Command Line"></category><category term="History"></category></entry><entry><title>Introdução Git</title><link href="/introducao-git.html" rel="alternate"></link><updated>2015-05-13T10:20:00-03:00</updated><author><name>Carlos Cardoso</name></author><id>tag:,2015-05-13:introducao-git.html</id><summary type="html">&lt;p&gt;Quer aprender Git e não sabe nem por onde começar?
+Minhas sugestões de material:&lt;/p&gt;
+&lt;h1&gt;Passo 1: &lt;a href="http://gitimmersion.com/"&gt;Git Immersion&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Este site vai te ajudar a instalar, configurar o basico e guia pelo processo do
+que será seu dia-a-dia com o Git.&lt;/p&gt;
+&lt;h1&gt;Passo 2: &lt;a href="http://think-like-a-git.net/"&gt;Think like a git&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Algumas das coisas que você fez no passo 1 mas não sabe por que são explicadas
+de forma mais simples pra ajudar a ligar os pontos e entender porque as coisas
+foram feitas no passo 1 como foram feitas.&lt;/p&gt;
+&lt;h1&gt;Passo 3: &lt;a href="http://ndpsoftware.com/git-cheatsheet.html"&gt;Git Cheat Sheet&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;CheatSheet online muito bem organizada com help dos comandos disponiveis e os
+tipos de entidades que temos disponíveis no Git.&lt;/p&gt;
+&lt;p&gt;Boa sorte&lt;/p&gt;</summary><category term="Git"></category></entry><entry><title>Django Performance tips</title><link href="/django-performance-tips.html" rel="alternate"></link><updated>2010-12-03T10:20:00-02:00</updated><author><name>Carlos Cardoso</name></author><id>tag:,2010-12-03:django-performance-tips.html</id><summary type="html">&lt;p&gt;Encontrei este post com dicas simples de como melhorar a performance do seu
+aplicativo desenvolvido com Django.&lt;/p&gt;
+&lt;p&gt;São dicas realmente objetivas e apesar de o artigo mencionar Django 1.6,
+deve funcionar para versões posteriores sem problemas.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.revsys.com/blog/2015/may/06/django-performance-simple-things/"&gt;Django performance post - by Frank Wiles&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Dicas:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Persistent Data Connections&lt;/li&gt;
+&lt;li&gt;Template Loading&lt;/li&gt;
+&lt;li&gt;Django Sessions Optimization&lt;/li&gt;
+&lt;li&gt;select_related() and prefetch_related() methods&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;O objetivo principal é diminuir a quantitdade desnecessária de hops ao banco de
+dados e sistema de arquivos usando mais cache e reaproveitamento de recursos em
+memória.&lt;/p&gt;
+&lt;p&gt;Tenha certeza de utilizar essas dicas na hora de implementar um novo site
+Django.&lt;/p&gt;</summary><category term="Django"></category><category term="Performance"></category></entry></feed>
