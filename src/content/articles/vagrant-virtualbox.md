@@ -4,7 +4,7 @@ Category: Hacking
 Tags: Virtualization, Vagrant, VirtualBox
 Authors: Carlos Cardoso
 
-Já tinha ouvido falar do [Vagrant](https://www.vagrantup.com/) há um tempo
+Já tinha ouvido falar do [Vagrant][1] há um tempo
 atrás e acabei não dando muita bola por ser um wrapper do VirtualBox que
 permite gerenciar ambientes virtuais.
 
@@ -33,3 +33,5 @@ Configurando um projeto de blog de páginas estáticas desenvolvido em Python
 + Pelican e testado numa máquina gerenciada por Vagrant.
 
 Fiquem ligados.
+
+[1]: https://www.vagrant.com/

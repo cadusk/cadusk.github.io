@@ -8,8 +8,7 @@ Este artigo ensina o básico da linha de comando, e dá dicas de produtividade
 com ferramentas e teclas de atalho que libertam o poder da linha de comando em
 suas mãos.
 
-[Artigo
-original](http://lifehacker.com/5743814/become-a-command-line-ninja-with-these-time-saving-shortcuts)
+[Artigo original][1]
 
 Atalhos básicos
 ===============
@@ -68,3 +67,5 @@ De uma olhada no artigo original, com o link lá no começo do post, para
 conhecer mais detalhes quando já estiver craque com os básicos.
 
 Boa sorte
+
+[1]: http://lifehacker.com/5743814/become-a-command-line-ninja-with-these-time-saving-shortcuts

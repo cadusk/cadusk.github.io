@@ -10,7 +10,7 @@ aplicativo desenvolvido com Django.
 São dicas realmente objetivas e apesar de o artigo mencionar Django 1.6,
 deve funcionar para versões posteriores sem problemas.
 
-[Django performance post - by Frank Wiles](http://www.revsys.com/blog/2015/may/06/django-performance-simple-things/)
+[Django performance post - by Frank Wiles][1]
 
 Dicas:
 ------
@@ -26,3 +26,5 @@ memória.
 
 Tenha certeza de utilizar essas dicas na hora de implementar um novo site
 Django.
+
+[1]: http://www.revsys.com/blog/2015/may/06/django-performance-simple-things/
