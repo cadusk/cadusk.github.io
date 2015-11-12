@@ -1,6 +1,6 @@
 Title: Command Line Ninja
 Date: 2015-05-25 21:32
-Category: Shell
+Category: Hacking
 Tags: Command Line, History
 Authors: Carlos Cardoso
 

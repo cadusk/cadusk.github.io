@@ -1,6 +1,6 @@
 Title: Django Performance tips
 Date: 2010-12-03 10:20
-Category: WebDev
+Category: Hacking
 Tags: Django, Performance
 Authors: Carlos Cardoso
 

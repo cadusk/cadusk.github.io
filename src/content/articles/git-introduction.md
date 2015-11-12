@@ -1,6 +1,6 @@
 Title: Introdução Git
 Date: 2015-05-13 10:20
-Category: Source Control
+Category: Hacking
 Tags: Git
 Authors: Carlos Cardoso
 
